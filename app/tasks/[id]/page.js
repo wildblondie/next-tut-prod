@@ -4,6 +4,7 @@ import Link from 'next/link';
 
 const SingleTaskPage = async ({ params }) => {
   const task = await getTask(params.id);
+
   return (
     <>
       <div className='mb-16'>
@@ -15,4 +16,5 @@ const SingleTaskPage = async ({ params }) => {
     </>
   );
 };
+
 export default SingleTaskPage;
