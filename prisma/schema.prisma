@@ -6,8 +6,9 @@ generator client {
 }
 
 datasource db {
-  // provider = "postgresql"
-  provider = "sqlite"
+  provider = "postgresql" // for Render
+  // provider = "sqlite"
+  // relationMode = "prisma" // for PlanetScale
   url      = env("DATABASE_URL")
 }
 

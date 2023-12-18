@@ -5,7 +5,7 @@ const url = 'https://www.thecocktaildb.com/api/json/v1/1/search.php?f=a';
 // Server components act as async functions, allowing us to get data from external APIs
 const fetchDrinks = async () => {
   // for demo purposes...
-  await new Promise((resolve) => setTimeout(resolve, 1000));
+  // await new Promise((resolve) => setTimeout(resolve, 1000));
   const response = await fetch(url);
 
   // throw error
